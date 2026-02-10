@@ -1,5 +1,6 @@
 package br.com.lojavirtualmentoria.loja_virtual_mentoria.domain.model;
 
+import br.com.lojavirtualmentoria.loja_virtual_mentoria.domain.enums.TipoEndereco;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -50,5 +51,8 @@ public class Endereco implements Serializable {
     @ManyToOne(targetEntity = Pessoa.class)
     @JoinColumn(name = "idPessoa", nullable = false, foreignKey = @ForeignKey(value = ConstraintMode.CONSTRAINT, name = "pessoa_fk"))
     private Pessoa pessoa;
+
+    @Enumerated(EnumType.STRING)
+    private TipoEndereco tipoEndereco;
 
 }

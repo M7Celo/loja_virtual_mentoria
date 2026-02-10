@@ -32,6 +32,7 @@ public class Acesso implements GrantedAuthority, Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_acesso")
+    @Column(name = "id_acesso")
     private Long idAcesso;
 
     @Column(nullable = false)
