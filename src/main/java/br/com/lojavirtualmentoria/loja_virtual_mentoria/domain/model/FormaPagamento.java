@@ -24,7 +24,6 @@ public class FormaPagamento implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_forma_pagamento")
-    @Column(name = "id_forma_pagamento")
     private Long idFormaPagamento;
 
     @Column(nullable = false)

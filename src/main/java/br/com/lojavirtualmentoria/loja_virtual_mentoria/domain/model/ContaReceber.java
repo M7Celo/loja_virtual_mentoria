@@ -44,7 +44,6 @@ public class ContaReceber implements Serializable {
     @Column(nullable = false)
     private BigDecimal valorTotal;
 
-    @Column(nullable = false)
     private BigDecimal valorDesconto;
 
     @ManyToOne(targetEntity = Pessoa.class)

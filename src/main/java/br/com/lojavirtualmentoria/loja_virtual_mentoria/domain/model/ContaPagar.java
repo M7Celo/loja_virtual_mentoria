@@ -34,7 +34,6 @@ public class ContaPagar implements Serializable {
     @Column(nullable = false)
     private BigDecimal valorTotal;
 
-    @Column(nullable = false)
     private BigDecimal valorDesconto;
 
     @Temporal(TemporalType.DATE)
